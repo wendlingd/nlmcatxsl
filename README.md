@@ -11,4 +11,4 @@ For example,
 - Send To > File > Format > XML
 - Transform with nlmcatalog.xsl
 
-Perhaps useful: [Searching for journals in the NLM Catalog](https://www.ncbi.nlm.nih.gov/books/NBK3799/#catalog.Searching_for_Journals_in_NLM_Ca)
+Perhaps useful: [Searching for journals in the NLM Catalog](https://www.ncbi.nlm.nih.gov/books/NBK3799/#catalog.Searching_for_journals_in_the_NL)
