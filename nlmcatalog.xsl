@@ -49,9 +49,10 @@
     
     <xsl:template match="NCBICatalogRecord">
         <tr>
-            <!-- NlmUniqueID -->
-            <td valign="top"><xsl:value-of select="JrXml/Serial/NlmUniqueID"/></td>
-            <!-- Title -->
+            <!-- NlmUniqueID Linked -->
+            <td valign="top">
+                <xsl:text disable-output-escaping="yes">&lt;a href="https://www.ncbi.nlm.nih.gov/nlmcatalog/</xsl:text><xsl:value-of select="JrXml/Serial/NlmUniqueID"/><xsl:text disable-output-escaping="yes">"&gt;</xsl:text><xsl:value-of select="JrXml/Serial/NlmUniqueID"/><xsl:text disable-output-escaping="yes">&lt;/a></xsl:text>
+            </td>
             <td valign="top"><xsl:value-of select="JrXml/Serial/Title"/></td>
             <!-- MedlineTitleAbbreviation -->
             <td valign="top"><xsl:value-of select="JrXml/Serial/MedlineTA"/></td>
@@ -81,12 +82,11 @@
             <td valign="top"><xsl:value-of select="JrXml/Serial/PublicationInfo/Frequency"/></td>
             <!-- Description -->
             <td valign="top">
-                <xsl:for-each select="NLMCatalogRecord/PhysicalDescription/Form">
-                    <xsl:apply-templates select="."/>
-                </xsl:for-each>
-                <xsl:for-each select="NLMCatalogRecord/PhysicalDescription/Extent">
-                    <xsl:apply-templates select="."/>
-                </xsl:for-each>
+                <xsl:choose>
+                    <xsl:when test="NLMCatalogRecord/PhysicalDescription/Form"><xsl:value-of select="NLMCatalogRecord/PhysicalDescription/Form"/></xsl:when>
+                    <xsl:when test="NLMCatalogRecord/PhysicalDescription/Extent"><xsl:value-of select="NLMCatalogRecord/PhysicalDescription/Extent"/></xsl:when>
+                    <xsl:otherwise><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></xsl:otherwise>
+                </xsl:choose>
             </td>
             <!-- Language -->
             <td valign="top">
