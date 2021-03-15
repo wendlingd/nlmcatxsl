@@ -9,5 +9,4 @@ For example,
 - Go to https://www.ncbi.nlm.nih.gov/nlmcatalog/?term=diabetes
 - In left nav filters, "Journals currently indexed in MEDLINE"
 - Send To > File > Format > XML
-
-Run through an XML processor.
+- Transform with nlmcatalog.xsl
