@@ -1,0 +1,168 @@
+<!ATTLIST AuthorList CompleteYN CDATA #IMPLIED>
+<!ATTLIST Classification Authority CDATA #IMPLIED>
+<!ATTLIST Classification CallNumberType CDATA #IMPLIED>
+<!ATTLIST Classification NLMCallNumberYN CDATA #IMPLIED>
+<!ATTLIST CollaborativePartnerDate CollaborativeStatus CDATA #IMPLIED>
+<!ATTLIST CollaborativePartnerDate Owner CDATA #IMPLIED>
+<!ATTLIST CrossReference XrType CDATA #IMPLIED>
+<!ATTLIST CurrentlyIndexedForSubset CurrentIndexingTreatment CDATA #IMPLIED>
+<!ATTLIST CurrentlyIndexedForSubset CurrentSubset CDATA #IMPLIED>
+<!ATTLIST DescriptorName MajorTopicYN CDATA #IMPLIED>
+<!ATTLIST DescriptorName Type CDATA #IMPLIED>
+<!ATTLIST ELocationID EIdType CDATA #IMPLIED>
+<!ATTLIST ELocationID ValidYN CDATA #IMPLIED>
+<!ATTLIST Frequency FrequencyType CDATA #IMPLIED>
+<!ATTLIST GeneralNote NoteType CDATA #IMPLIED>
+<!ATTLIST GeneralNote Owner CDATA #IMPLIED>
+<!ATTLIST ISBN ValidYN CDATA #IMPLIED>
+<!ATTLIST ISSN CreatedTimestamp CDATA #IMPLIED>
+<!ATTLIST ISSN IssnType CDATA #IMPLIED>
+<!ATTLIST ISSN ValidYN CDATA #IMPLIED>
+<!ATTLIST ISSNLinking ValidYN CDATA #IMPLIED>
+<!ATTLIST Imprint FunctionType CDATA #IMPLIED>
+<!ATTLIST Imprint ImprintType CDATA #IMPLIED>
+<!ATTLIST IndexingHistory CitationSubset CDATA #IMPLIED>
+<!ATTLIST IndexingHistory IndexingStatus CDATA #IMPLIED>
+<!ATTLIST IndexingHistory IndexingTreatment CDATA #IMPLIED>
+<!ATTLIST IndexingSourceName IndexingStatus CDATA #IMPLIED>
+<!ATTLIST IndexingSourceName IndexingTreatment CDATA #IMPLIED>
+<!ATTLIST JrXml id CDATA #IMPLIED>
+<!ATTLIST LCCN ValidYN CDATA #IMPLIED>
+<!ATTLIST Language LangType CDATA #IMPLIED>
+<!ATTLIST LocalNote LocalNoteType CDATA #IMPLIED>
+<!ATTLIST MeshHeading URI CDATA #IMPLIED>
+<!ATTLIST NCBICatalogRecord ID CDATA #IMPLIED>
+<!ATTLIST NLMCatalogRecord Owner CDATA #IMPLIED>
+<!ATTLIST NLMCatalogRecord Status CDATA #IMPLIED>
+<!ATTLIST OtherAbstract Type CDATA #IMPLIED>
+<!ATTLIST OtherID Prefix CDATA #IMPLIED>
+<!ATTLIST OtherID Source CDATA #IMPLIED>
+<!ATTLIST OtherSubjectList Owner CDATA #IMPLIED>
+<!ATTLIST OtherSubjectName MajorTopicYN CDATA #IMPLIED>
+<!ATTLIST OtherSubjectName SubjectType CDATA #IMPLIED>
+<!ATTLIST PlaceCode Authority CDATA #IMPLIED>
+<!ATTLIST PublicationType UI CDATA #IMPLIED>
+<!ATTLIST QualifierName MajorTopicYN CDATA #IMPLIED>
+<!ATTLIST RecordID Source CDATA #IMPLIED>
+<!ATTLIST Role CodedYN CDATA #IMPLIED>
+<!ATTLIST Serial DataCreationMethod CDATA #IMPLIED>
+<!ATTLIST Serial MedPrintYN CDATA #IMPLIED>
+<!ATTLIST Serial PMC CDATA #IMPLIED>
+<!ATTLIST Serial Status CDATA #IMPLIED>
+<!ATTLIST Title Sort CDATA #IMPLIED>
+<!ATTLIST TitleAlternate Owner CDATA #IMPLIED>
+<!ATTLIST TitleAlternate TitleType CDATA #IMPLIED>
+<!ATTLIST TitleRelated Owner CDATA #IMPLIED>
+<!ATTLIST TitleRelated TitleType CDATA #IMPLIED>
+<!ELEMENT AbstractText (#PCDATA)>
+<!ELEMENT Author (#PCDATA | CollectiveName | Role | LastName | ForeName | Initials | NameQualifier | OtherInformation | DatesAssociatedWithName | TitleAssociatedWithName)*>
+<!ELEMENT AuthorList (#PCDATA | Author)*>
+<!ELEMENT BroadJournalHeading (#PCDATA)>
+<!ELEMENT BroadJournalHeadingList (#PCDATA | BroadJournalHeading)*>
+<!ELEMENT CarrierType (#PCDATA)>
+<!ELEMENT Classification (#PCDATA)>
+<!ELEMENT Coden (#PCDATA)>
+<!ELEMENT CollaborativePartnerDate (#PCDATA)>
+<!ELEMENT CollectiveName (#PCDATA)>
+<!ELEMENT ContentType (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT Coverage (#PCDATA)>
+<!ELEMENT CoverageNote (#PCDATA)>
+<!ELEMENT CrossReference (#PCDATA | XrTitle)*>
+<!ELEMENT CrossReferenceList (#PCDATA | CrossReference)*>
+<!ELEMENT CurrentlyIndexedForSubset (#PCDATA)>
+<!ELEMENT CurrentlyIndexedYN (#PCDATA)>
+<!ELEMENT DateAuthorized (#PCDATA | Year | Month | Day)*>
+<!ELEMENT DateCompleted (#PCDATA | Year | Month | Day)*>
+<!ELEMENT DateCreated (#PCDATA | Year | Month | Day)*>
+<!ELEMENT DateIssued (#PCDATA)>
+<!ELEMENT DateOfAction (#PCDATA | Year | Month | Day)*>
+<!ELEMENT DateRevised (#PCDATA | Year | Month | Day)*>
+<!ELEMENT DateRevisedMajor (#PCDATA | Year | Month | Day)*>
+<!ELEMENT DatesAssociatedWithName (#PCDATA)>
+<!ELEMENT DatesOfSerialPublication (#PCDATA)>
+<!ELEMENT Day (#PCDATA)>
+<!ELEMENT DescriptiveInformation (#PCDATA)>
+<!ELEMENT DescriptorName (#PCDATA)>
+<!ELEMENT ELocation (#PCDATA | ELocationID | DescriptiveInformation)*>
+<!ELEMENT ELocationID (#PCDATA)>
+<!ELEMENT ELocationList (#PCDATA | ELocation)*>
+<!ELEMENT Edition (#PCDATA)>
+<!ELEMENT Entity (#PCDATA)>
+<!ELEMENT Extent (#PCDATA)>
+<!ELEMENT ForeName (#PCDATA)>
+<!ELEMENT Form (#PCDATA)>
+<!ELEMENT Frequency (#PCDATA)>
+<!ELEMENT GeneralNote (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT ISSN (#PCDATA)>
+<!ELEMENT ISSNLinking (#PCDATA)>
+<!ELEMENT IlsCreatedTimestamp (#PCDATA | Year | Month | Day)*>
+<!ELEMENT IlsUpdatedTimestamp (#PCDATA | Year | Month | Day)*>
+<!ELEMENT Imprint (#PCDATA | Place | Entity | DateIssued | ImprintFull)*>
+<!ELEMENT ImprintFull (#PCDATA)>
+<!ELEMENT IndexOnlineYN (#PCDATA)>
+<!ELEMENT IndexingHistory (#PCDATA | DateOfAction | Coverage | CoverageNote)*>
+<!ELEMENT IndexingHistoryList (#PCDATA | IndexingHistory)*>
+<!ELEMENT IndexingSelectedURL (#PCDATA)>
+<!ELEMENT IndexingSource (#PCDATA | IndexingSourceName | Coverage)*>
+<!ELEMENT IndexingSourceList (#PCDATA | IndexingSource)*>
+<!ELEMENT IndexingSourceName (#PCDATA)>
+<!ELEMENT IndexingStartDate (#PCDATA)>
+<!ELEMENT IndexingSubset (#PCDATA)>
+<!ELEMENT Initials (#PCDATA)>
+<!ELEMENT Issuance (#PCDATA)>
+<!ELEMENT JrXml (#PCDATA | Serial)*>
+<!ELEMENT LCCN (#PCDATA)>
+<!ELEMENT Language (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT LocalNote (#PCDATA)>
+<!ELEMENT MediaType (#PCDATA)>
+<!ELEMENT MedlineDataUpdatedTimestamp (#PCDATA | Year | Month | Day)*>
+<!ELEMENT MedlineTA (#PCDATA)>
+<!ELEMENT MeshHeading (#PCDATA | DescriptorName | QualifierName)*>
+<!ELEMENT MeshHeadingList (#PCDATA | MeshHeading)*>
+<!ELEMENT MinorTitleChangeYN (#PCDATA)>
+<!ELEMENT Month (#PCDATA)>
+<!ELEMENT NCBICatalogRecord (#PCDATA | NLMCatalogRecord | JrXml)*>
+<!ELEMENT NLMCatalogRecord (#PCDATA | NlmUniqueID | DateCreated | DateRevised | DateAuthorized | DateCompleted | DateRevisedMajor | TitleMain | MedlineTA | TitleRelated | AuthorList | ResourceInfo | PublicationTypeList | PublicationInfo | Language | PhysicalDescription | IndexingSourceList | GeneralNote | MeshHeadingList | Classification | ELocationList | LCCN | ISSN | ISSNLinking | OtherID | TitleAlternate | Coden | OtherAbstract | ISBN | LocalNote | OtherSubjectList | CollaborativePartnerDate)*>
+<!ELEMENT NLMCatalogRecordSet (#PCDATA | NCBICatalogRecord)*>
+<!ELEMENT NameQualifier (#PCDATA)>
+<!ELEMENT NlmUniqueID (#PCDATA)>
+<!ELEMENT NlmWorkID (#PCDATA)>
+<!ELEMENT OtherAbstract (#PCDATA | AbstractText)*>
+<!ELEMENT OtherID (#PCDATA)>
+<!ELEMENT OtherInformation (#PCDATA)>
+<!ELEMENT OtherSubject (#PCDATA | OtherSubjectName)*>
+<!ELEMENT OtherSubjectList (#PCDATA | OtherSubject)*>
+<!ELEMENT OtherSubjectName (#PCDATA)>
+<!ELEMENT PhysicalDescription (#PCDATA | Extent | Form)*>
+<!ELEMENT Place (#PCDATA)>
+<!ELEMENT PlaceCode (#PCDATA)>
+<!ELEMENT ProcessingCode (#PCDATA)>
+<!ELEMENT PublicationEndYear (#PCDATA)>
+<!ELEMENT PublicationFirstYear (#PCDATA)>
+<!ELEMENT PublicationInfo (#PCDATA | Country | PlaceCode | Imprint | PublicationFirstYear | PublicationEndYear | DatesOfSerialPublication | Frequency | Place | Publisher | Edition)*>
+<!ELEMENT PublicationType (#PCDATA)>
+<!ELEMENT PublicationTypeList (#PCDATA | PublicationType)*>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT QualifierName (#PCDATA)>
+<!ELEMENT RecordID (#PCDATA)>
+<!ELEMENT ReportedMedlineYN (#PCDATA)>
+<!ELEMENT Resource (#PCDATA | ContentType | MediaType | CarrierType)*>
+<!ELEMENT ResourceInfo (#PCDATA | TypeOfResource | Issuance | ResourceUnit | Resource)*>
+<!ELEMENT ResourceUnit (#PCDATA)>
+<!ELEMENT Role (#PCDATA)>
+<!ELEMENT SEFCreatedTimestamp (#PCDATA | Year | Month | Day)*>
+<!ELEMENT SEFUpdatedTimestamp (#PCDATA | Year | Month | Day)*>
+<!ELEMENT Serial (#PCDATA | NlmWorkID | NlmUniqueID | Title | MedlineTA | PublicationInfo | ISSN | ISSNLinking | Language | TitleContinuationYN | GeneralNote | MinorTitleChangeYN | ProcessingCode | CurrentlyIndexedYN | IndexOnlineYN | IndexingSubset | ReportedMedlineYN | MeshHeadingList | CrossReferenceList | SortSerialName | IlsCreatedTimestamp | IlsUpdatedTimestamp | MedlineDataUpdatedTimestamp | SEFCreatedTimestamp | SEFUpdatedTimestamp | IndexingHistoryList | IndexingSelectedURL | TitleRelated | IndexingStartDate | CurrentlyIndexedForSubset | BroadJournalHeadingList | Coden)*>
+<!ELEMENT SortSerialName (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT TitleAlternate (#PCDATA | Title | OtherInformation)*>
+<!ELEMENT TitleAssociatedWithName (#PCDATA)>
+<!ELEMENT TitleContinuationYN (#PCDATA)>
+<!ELEMENT TitleMain (#PCDATA | Title | OtherInformation)*>
+<!ELEMENT TitleRelated (#PCDATA | Title | RecordID | ISSN | OtherInformation)*>
+<!ELEMENT TypeOfResource (#PCDATA)>
+<!ELEMENT XrTitle (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
